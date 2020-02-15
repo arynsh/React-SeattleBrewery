@@ -10,7 +10,7 @@
 - [Contact](#-contact)
 - [License](#-license)
 
-## Description
+### Description
 This is a program for a brewery that uses React and client-side routing via the React Router library. It displays the list of beers/ciders available and will allow user authentication for employees to edit/track kegs.
 
 ### Specifications
@@ -20,7 +20,7 @@ This is a program for a brewery that uses React and client-side routing via the 
 | **User clicks 'under21' and doesn't access beers| http://localhost:8080/#/UnderAge | User is unable to see beers |
 | **User clicks 'over21' and accesses beers | http://localhost:8080/#/BeerList |  User is redirected to list of beers |
 
-## Component Structure
+### Component Structure
 ```
 App
 └── Header     
@@ -60,7 +60,7 @@ $ npm run start
 4. On your browser, open http://localhost:8000/#
 
 
-## Known Bugs
+### Known Bugs
 * No known bugs at this time.
 
 ## 📋 Technologies Requirements
