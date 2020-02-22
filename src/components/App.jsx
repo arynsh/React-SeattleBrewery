@@ -4,6 +4,7 @@ import Header from './Header';
 import UnderAge from './UnderAge';
 import BeerList from './BeerList';
 import AddNewKeg from './AddNewKeg';
+import Admin from './Admin';
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route exact path='/UnderAge' component={UnderAge} />
         <Route exact path='/AddNewKeg' component={AddNewKeg} />
         <Route exact path='/BeerList' component={BeerList} />
+        <Route exact path='/Admin' component={Admin} />
       </Switch>
     </div>
   );
