@@ -32,7 +32,7 @@ function Header() {
   return (
 
     <div style={navStyling}>
-      <p style={linkStyleLeft}><Link to='/'>Home</Link> | <Link to='/BeerList'>On tap now</Link></p>
+      <p style={linkStyleLeft}><Link to='/'>Home</Link> | <Link to='/KegList'>On tap now</Link></p>
       <center>
       <h2>
         <style jsx> {`

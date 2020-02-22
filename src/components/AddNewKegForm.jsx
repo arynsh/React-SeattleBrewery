@@ -1,54 +1,28 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-function AddNewKegForm() {
-  return (
-    <div>
-      <form>
-        <input
-          type='text'
-          id='name'
-          placeholder='Name of Beer' />
-        <input
-          type='text'
-          id='brand'
-          placeholder='Beer Brand' />
-        <input
-          type='number'
-          id='price'
-          placeholder='Price Per Pint' />
-        <input
-          type='text'
-          id='alcoholContent'
-          placeholder='Alcohol Content' />
-        <button type='submit'>Add!</button>
-      </form>
-    </div>
-  );
-}
-
-export default AddNewKegForm;
-
-  
-import React from 'react';
-
-function NewTicketForm(){
-  let _names = null;
+function NewKegForm(props){
+  let _name = null;
+  let _brand = null;
+  let _price = null;
   let _location = null;
-  let _issue = null;
+  let _alcoholContent = null;
+  let _pintsAvailable = null;
 
-  function handleNewTicketFormSubmission(event) {
+  function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log(_names.value);
-    console.log(_location.value);
-    console.log(_issue.value);
-    _names.value = ''
+    props.onNewKegCreation({name: _name.value, location: _location.value, brand: _brand.value, price: _price.value, _alcoholContent: _alcoholContent.value, _pintsAvailable: _pintsAvailable.value});
+    _name.value = ''
+    _brand.value = ''
+    _price.value = ''
     _location.value = ''
-    _issue.value = ''
+    _alcoholContent.value = ''
+    _pintsAvailable.value = ''
   }
 
   return (
     <div>
-      <form onSubmit={handleNewTicketFormSubmission}>
+      <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
           id='name'
@@ -80,4 +54,8 @@ function NewTicketForm(){
   );
 }
 
-export default NewTicketForm;
+NewKegForm.propTypes = {
+  onNewKegCreation: PropTypes.func
+};
+
+export default NewKegForm;

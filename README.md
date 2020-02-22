@@ -1,5 +1,5 @@
 # Seattle Brewery
-#### A React app for a brewery to store and track beer/kegs. 
+#### A React app for a brewery to store and track Keg/kegs. 
 
 #### By **Sharon Lee**
 ## 🎉 Contents
@@ -11,14 +11,14 @@
 - [License](#-license)
 
 ### Description
-This is a program for a brewery that uses React and client-side routing via the React Router library. It displays the list of beers/ciders available and will allow user authentication for employees to edit/track kegs.
+This is a program for a brewery that uses React and client-side routing via the React Router library. It displays the list of Kegs/ciders available and will allow user authentication for employees to edit/track kegs.
 
 ### Specifications
 | Spec | Input | Output |
 | :-------------     | :------------ | :------------- |
 | Homepage | User accesses:http://localhost:8000/| Homepage w/age verification |
-| **User clicks 'under21' and doesn't access beers| http://localhost:8080/#/UnderAge | User is unable to see beers |
-| **User clicks 'over21' and accesses beers | http://localhost:8080/#/BeerList |  User is redirected to list of beers |
+| **User clicks 'under21' and doesn't access Kegs| http://localhost:8080/#/UnderAge | User is unable to see Kegs |
+| **User clicks 'over21' and accesses Kegs | http://localhost:8080/#/KegList |  User is redirected to list of Kegs |
 
 ### Component Structure
 ```
@@ -31,12 +31,12 @@ App
     └── About Us
     └── Visit
     └── Careers
-    └── Beer List
-    |     └── Beer
+    └── Keg List
+    |     └── Keg
     |    
     └── Employee        
-    |    └── Add New Beer
-    |    └── Edit Beer
+    |    └── Add New Keg
+    |    └── Edit Keg
     └── Error 404
 ```
 
