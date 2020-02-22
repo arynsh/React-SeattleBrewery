@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import image1 from '../assets/images/image1.jpg';
 
 function Beer(props) {
   return (
@@ -13,6 +14,7 @@ function Beer(props) {
       <p><em>{props.brand}</em></p>
       <p>{props.location}</p>
       <p>${props.price} /pint</p>
+      <img src={props.img}></img>
       <hr />
     </div>
   );
@@ -26,4 +28,4 @@ Beer.propTypes = {
   price: PropTypes.number
 };
 
-export default Beer;
+export default Beer; 
