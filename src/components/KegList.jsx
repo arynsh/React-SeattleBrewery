@@ -1,7 +1,6 @@
 import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
-import image1 from '../assets/images/image1.jpg';
 
 var KegListStyling=
   {
@@ -22,7 +21,6 @@ function KegList(props) {
             alcoholContent={keg.alcoholContent} 
             pintsAvailable={keg.pintsAvailable} 
             price={keg.price}
-            img={keg.img}
             key={index} />
         )}
         </center>

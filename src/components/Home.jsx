@@ -44,7 +44,6 @@ function Home() {
        <img style={imgStyling} src="https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.kansascitymag.com/content/uploads/2019/06/435-Keg-Cover_CCastor_05-1024x683.jpg"></img>
        <div style={boxStyling}>
                 <h1 class="title">
-                    
                     <p>You've reached the homepage. Go you.</p>
                     <p> Are you at least 21 years of age?</p>
                 </h1>
