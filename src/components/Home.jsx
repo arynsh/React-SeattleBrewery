@@ -41,7 +41,7 @@ var linkStyle= {
 function Home() {
     return (
       <div style={homeStyling}>
-       <img style={imgStyling} src="https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.kansascitymag.com/content/uploads/2019/06/435-Keg-Cover_CCastor_05-1024x683.jpg"></img>
+       <img style={imgStyling} src="https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.kansascitymag.com/content/uploads/2019/06/435-Beer-Cover_CCastor_05-1024x683.jpg"></img>
        <div style={boxStyling}>
                 <h1 class="title">
                     <p>You've reached the homepage. Go you.</p>
