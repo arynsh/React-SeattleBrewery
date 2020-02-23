@@ -8,17 +8,15 @@ function NewKegForm(props){
   let _price = null;
   let _location = null;
   let _alcoholContent = null;
-  let _pintsAvailable = null;
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, location: _location.value, _alcoholContent: _alcoholContent.value, _pintsAvailable: _pintsAvailable.value, id: v4()});
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, location: _location.value, _alcoholContent: _alcoholContent.value, id: v4()});
     _name.value = ''
     _brand.value = ''
     _price.value = ''
     _location.value = ''
     _alcoholContent.value = ''
-    _pintsAvailable.value = ''
   }
 
   return (
@@ -49,11 +47,6 @@ function NewKegForm(props){
           id='alcoholContent'
           placeholder='alcohol content'
           ref={(input) => {_alcoholContent = input;}}/>
-         <input
-          type='number'
-          id='pintsAvailable'
-          placeholder='pints available'
-          ref={(input) => {_pintsAvailable = input;}}/>
         <button type='submit'>Submit</button>
       </form>
     </div>

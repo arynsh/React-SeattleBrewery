@@ -18,21 +18,21 @@ class Keg extends React.Component {
   }
 
   render(){
-    var buttonStyle = {
-      backgroundColor: 'pink',
-      color: 'grey',
-      border: '1px solid white'
-    }
 
+    var buttonStyle = {
+    backgroundColor: 'pink',
+    color: 'black',
+    padding: '8px'
+   }
     return (
       <div>
-        <h3>{props.name} - {props.alcoholContent}</h3>
-        <p><em>{props.brand}</em></p>
-        <p>{props.location}</p>
-        <p>${props.price} /pint</p>
-        <p>{props.pintsAvailable}</p>
+        <h3>{this.props.name} - {this.props.alcoholContent}</h3>
+        <p><em>{this.props.brand}</em></p>
+        <p>{this.props.location}</p>
+        <p>${this.props.price} /pint</p>
+        <p>{this.state.pints} pints avail.</p>
+        <button style={buttonStyle} onClick={this.decreasePint}>Decrease</button>
         <hr />
-        <button onClick={this.decreasePint}>Decrease</button>
       </div>
     );
   }
@@ -42,7 +42,6 @@ Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  pintsAvailable: PropTypes.number,
   alcoholContent: PropTypes.number,
   price: PropTypes.number
 };

@@ -19,7 +19,6 @@ function KegList(props) {
             brand={keg.brand}
             location={keg.location}
             alcoholContent={keg.alcoholContent} 
-            pintsAvailable={keg.pintsAvailable} 
             price={keg.price}
             key={keg.id} />
         )}
