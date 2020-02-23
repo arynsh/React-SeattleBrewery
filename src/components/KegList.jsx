@@ -21,7 +21,7 @@ function KegList(props) {
             alcoholContent={keg.alcoholContent} 
             pintsAvailable={keg.pintsAvailable} 
             price={keg.price}
-            key={index} />
+            key={keg.id} />
         )}
         </center>
        </div>

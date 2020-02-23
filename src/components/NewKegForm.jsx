@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewKegForm(props){
   let _name = null;
@@ -11,8 +12,7 @@ function NewKegForm(props){
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
-    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, location: _location.value, _alcoholContent: _alcoholContent.value, _pintsAvailable: _pintsAvailable.value});
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, location: _location.value, _alcoholContent: _alcoholContent.value, _pintsAvailable: _pintsAvailable.value, id: v4()});
     _name.value = ''
     _brand.value = ''
     _price.value = ''
@@ -45,7 +45,7 @@ function NewKegForm(props){
           placeholder='location'
           ref={(input) => {_location = input;}}/>
         <input
-          type='text'
+          type='number'
           id='alcoholContent'
           placeholder='alcohol content'
           ref={(input) => {_alcoholContent = input;}}/>

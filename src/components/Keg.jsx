@@ -9,6 +9,7 @@ function Keg(props) {
       <p><em>{props.brand}</em></p>
       <p>{props.location}</p>
       <p>${props.price} /pint</p>
+      <p>{props.pintsAvailable}</p>
       <hr />
     </div>
   );
@@ -19,7 +20,7 @@ Keg.propTypes = {
   brand: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   pintsAvailable: PropTypes.number,
-  alcoholContent: PropTypes.string,
+  alcoholContent: PropTypes.number,
   price: PropTypes.number
 };
 
