@@ -24,8 +24,7 @@ This is a program for a brewery that uses React and client-side routing via the 
 ### Component Structure
 ```
 App (state -> NewKegControl -> NewKegForm)
-└── Header     
-│       
+└── Header          
 └── Switch
     └── Home
     └── Under21
