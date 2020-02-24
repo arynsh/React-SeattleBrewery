@@ -48,7 +48,7 @@ $ git clone https://github.com/arynsh/react-seattlebrewery
 ```
 2. Navigate into the repository
 ```
-$ cd react-seattle-brewery
+$ cd react-seattlebrewery
 ```
 3. In the command line, type in "npm install" or "npm i" then "npm run start".
 ```
