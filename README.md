@@ -42,9 +42,9 @@ App (state -> NewKegControl -> NewKegForm)
 
 ### Instructions
 
-1. Clone this repository: https://github.com/arynsh/react-seattle-brewery
+1. Clone this repository: https://github.com/arynsh/react-seattlebrewery
 ```
-$ git clone https://github.com/arynsh/react-seattle-brewery
+$ git clone https://github.com/arynsh/react-seattlebrewery
 ```
 2. Navigate into the repository
 ```
