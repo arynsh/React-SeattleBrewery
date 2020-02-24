@@ -1,17 +1,17 @@
 # Seattle Brewery
-#### A React app for a brewery to store and track Keg/kegs. 
+#### A React app for a brewery to store, track kegs, and track available pints. 
 
 #### By **Sharon Lee**
 ## 🎉 Contents
 
-- [Description](#-description)
-- [Specifications](#-specifications)
-- [Instructions](#-instructions)
-- [Contact](#-contact)
-- [License](#-license)
+* [Description](#description)
+* [Specifications](#specifications)
+* [Instructions](#instructions)
+* [Contact](#contact)
+* [License](#license)
 
 ### Description
-This is a program for a brewery that uses React and client-side routing via the React Router library. It displays the list of Kegs/ciders available and will allow user authentication for employees to edit/track kegs.
+This is a program for a brewery that uses React and client-side routing via the React Router library. It displays the list of beers/ciders available and will allow employees to edit/track kegs. The user will be able to click a button to decrease available pints per keg and see the number of pints decrease.
 
 ### Specifications
 | Spec | Input | Output |
@@ -19,10 +19,11 @@ This is a program for a brewery that uses React and client-side routing via the 
 | Homepage | User accesses:http://localhost:8000/| Homepage w/age verification |
 | **User clicks 'under21' and doesn't access Kegs| http://localhost:8080/#/UnderAge | User is unable to see Kegs |
 | **User clicks 'over21' and accesses Kegs | http://localhost:8080/#/KegList |  User is redirected to list of Kegs |
+| **User clicks 'decrease' button for individual keg and avail. pints decreases by 1 pint| http://localhost:8080/#/KegList |  Number of pints avail. decreases by the number of clicks |
 
 ### Component Structure
 ```
-App
+App (state -> NewKegControl -> NewKegForm)
 └── Header     
 │       
 └── Switch
@@ -32,11 +33,10 @@ App
     └── Visit
     └── Careers
     └── Keg List
-    |     └── Keg
-    |    
-    └── Employee        
-    |    └── Add New Keg
-    |    └── Edit Keg
+    |     └── Keg (state)
+    └── NewKegControl (state)
+    |    └── Confirmation Question    
+    |    └── NewKegForm
     └── Error 404
 ```
 
@@ -66,7 +66,7 @@ $ npm run start
 ## 📋 Technologies Requirements
  You may use Windows, macOS, or Linux as your development operating system, though building and running apps may be limited.
  Tools used:  
-* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [React](https://reactjs.org/)
 * [Node.js](https://nodejs.org/en/)
 * [Visual Studio](https://www.visualstudiocommunity.com)

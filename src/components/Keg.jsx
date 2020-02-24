@@ -8,7 +8,7 @@ class Keg extends React.Component {
     this.state = {
       pints: 124
     };
-    console.log(this.state.pints);
+    
     this.decreasePint = this.decreasePint.bind(this);
   }
 
@@ -49,8 +49,3 @@ Keg.propTypes = {
 export default Keg; 
 
 
-{/* <Button 
-className="btn btn-success" style={buttonStyle}
-onClick={() => this.setState({pints: this.state.pints += 1})}>
-Decrease Pint
-</Button> */}
